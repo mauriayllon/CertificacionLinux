@@ -1,0 +1,10 @@
+cp:
+-v : explica lo que esta haciendo
+
+mkdir:
+-v : nos imprime un mensaje para el directorio que estamos creando, nos puede ayudar a recordar algo.
+
+
+rm:
+-i : siempre pregunta antes de borrar,
+

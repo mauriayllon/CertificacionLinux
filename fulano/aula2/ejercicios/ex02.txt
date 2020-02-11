@@ -1,0 +1,3 @@
+Man ls
+ls -X : sortea los elementos alfabeticamente.
+ls -r : sorteo los elementos en reversa, esto puede servir cuando tiene muchso elementos dentro del directorio y quieres buscar por los ultimos.

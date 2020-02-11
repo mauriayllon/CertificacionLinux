@@ -1,0 +1,15 @@
+1)
+a)
+ls: lista todos los ficheros
+ls -m: lista todos los ficheros del directorio separando el nombre de cada uno por una coma.
+ls -l: lista todos los ficheros del directorio pero con sus extensiones, es decir permisos, nombre del dueno, nombre del grupo, tamanho y fecha de creacion,
+ls -l -v: lista todos los elementos del directorio tomando en cuenta el numero que hay entre texto.
+c)
+ls ai[1 5].c : lista todos los directorios que tenga empiecen con ai y terminen con .c pero que tengan numero del 1 al 5 entre medio.
+
+ls [a-c]ii1.c ; lista todos los directorios que tenga empiecen con cualquier letra a b o c y que tengan la estructura ii1.c .
+
+e)
+echo ai[1-5].c : el echo unicamente te imprime lo que le estas pidiendo entonces solo te imprimira ai[1-5].c
+ls [a-c]ii1.c : este comando te listara unicamente los elementos que tengan la estructura ii1.c pero que empiecen con la letra a b o c.
+
