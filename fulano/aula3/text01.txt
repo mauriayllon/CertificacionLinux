@@ -1,0 +1,4 @@
+Editor Vim:
+El comando ls funciona para listar todos los elementos del directorio.
+
+

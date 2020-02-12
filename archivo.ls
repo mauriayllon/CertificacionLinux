@@ -1,0 +1,3 @@
+archivo.ls
+backup
+fulano
