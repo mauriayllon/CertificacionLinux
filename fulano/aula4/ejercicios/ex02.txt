@@ -1,0 +1,14 @@
+1)
+El script ya esta con el permiso de ejecucion.
+chmod +x forever.sh
+
+2)
+./forever.sh 
+Starting the Infinite Process
+^Z
+[2]+  Stopped                 ./forever.sh
+El proceso se encuentra parado.
+
+ bg
+[2]+ ./forever.sh &
+Ahora el proceso se encuentra ejecutandose en segundo plano.

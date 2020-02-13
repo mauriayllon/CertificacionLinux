@@ -402,3 +402,53 @@ root      26860      2  0 04:27 ?        00:00:00 [kworker/0:2-eve]
 root      26879      2  0 04:33 ?        00:00:00 [kworker/0:1-eve]
 mauriay+  26882  24118  0 04:34 pts/0    00:00:00 ps -ef
 
+3)
+
+firefox &
+[1] 26901
+
+4)
+
+kill 26901
+bash: kill: (26901) - No such process
+[1]+  Done                    firefox
+
+5)
+
+gedit &
+[1] 26955
+
+6)
+
+bg
+bash: bg: job 1 already in background
+
+7)
+
+fg
+gedit
+
+8)
+top
+ 4746 mauriay+  20   0 2998272 269116  27420 S  0.3 13.4   5:10.42 gnome-shell  
+ El proceso 4746 es el proceso que mas utiliza recursos.
+
+ 9)
+  %MEM - simply RES divided by total physical memory
+          CODE - the `pgms' portion of quadrant 3
+          DATA - the entire quadrant 1 portion of VIRT plus all
+                 explicit mmap file-backed pages of quadrant 3
+          RES  - anything occupying physical memory which, beginning with
+                 Linux-4.5, is the sum of the following three fields:
+                 RSan - quadrant 1 pages, which include any
+                        former quadrant 3 pages if modified
+                 RSfd - quadrant 3 and quadrant 4 pages
+                 RSsh - quadrant 2 pages
+          RSlk - subset of RES which cannot be swapped out (any quadrant)
+          SHR  - subset of RES (excludes 1, includes all 2 & 4, some 3)
+          SWAP - potentially any quadrant except 4
+          USED - simply the sum of RES and SWAP
+          VIRT - everything in-use and/or reserved (all quadrants)
+
+
+
