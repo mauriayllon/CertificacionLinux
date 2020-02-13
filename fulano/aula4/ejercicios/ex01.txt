@@ -1,0 +1,404 @@
+1)
+Procesos del usuario con el coamdno ps -fu mauriayllon
+
+UID         PID   PPID  C STIME TTY          TIME CMD
+mauriay+   4566      1  0 Feb12 ?        00:00:00 /lib/systemd/systemd --user
+mauriay+   4567   4566  0 Feb12 ?        00:00:00 (sd-pam)
+mauriay+   4580      1  0 Feb12 ?        00:00:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+mauriay+   4584   4562  0 Feb12 tty2     00:00:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
+mauriay+   4587   4584  0 Feb12 tty2     00:02:14 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+mauriay+   4594   4566  0 Feb12 ?        00:00:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+mauriay+   4598   4584  0 Feb12 tty2     00:00:00 /usr/lib/gnome-session/gnome-session-binary --session=ubuntu
+mauriay+   4693   4598  0 Feb12 ?        00:00:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
+mauriay+   4696   4566  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfsd
+mauriay+   4701   4566  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+mauriay+   4710   4566  0 Feb12 ?        00:00:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+mauriay+   4715   4710  0 Feb12 ?        00:00:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+mauriay+   4718   4566  0 Feb12 ?        00:00:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+mauriay+   4731   4566  0 Feb12 ?        00:00:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+mauriay+   4746   4598  0 Feb12 tty2     00:04:56 /usr/bin/gnome-shell
+mauriay+   4757      1  0 Feb12 ?        00:00:15 /usr/bin/pulseaudio --start --log-target=syslog
+mauriay+   4769   4746  0 Feb12 tty2     00:00:21 ibus-daemon --xim --panel disable
+mauriay+   4771   4566  0 Feb12 ?        00:00:00 /usr/libexec/xdg-permission-store
+mauriay+   4779   4769  0 Feb12 tty2     00:00:00 /usr/lib/ibus/ibus-dconf
+mauriay+   4782      1  0 Feb12 tty2     00:00:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+mauriay+   4784   4566  0 Feb12 ?        00:00:00 /usr/lib/ibus/ibus-portal
+mauriay+   4794   4566  0 Feb12 ?        00:00:00 /usr/lib/gnome-shell/gnome-shell-calendar-server
+mauriay+   4800   4566  0 Feb12 ?        00:00:00 /usr/lib/evolution/evolution-source-registry
+mauriay+   4805   4566  0 Feb12 ?        00:00:00 /usr/lib/dconf/dconf-service
+mauriay+   4811   4566  0 Feb12 ?        00:00:00 /usr/lib/gnome-online-accounts/goa-daemon
+mauriay+   4817   4566  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+mauriay+   4821   4566  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+mauriay+   4826   4566  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+mauriay+   4835   4566  0 Feb12 ?        00:00:00 /usr/lib/gnome-online-accounts/goa-identity-service
+mauriay+   4837   4566  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+mauriay+   4843   4566  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+mauriay+   4850   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-power
+mauriay+   4852   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+mauriay+   4853   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+mauriay+   4854   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+mauriay+   4857   4598  0 Feb12 tty2     00:00:01 /usr/lib/gnome-settings-daemon/gsd-sharing
+mauriay+   4860   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+mauriay+   4867   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+mauriay+   4869   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-sound
+mauriay+   4879   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+mauriay+   4881   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+mauriay+   4885   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+mauriay+   4887   4598  0 Feb12 tty2     00:00:12 /usr/lib/gnome-settings-daemon/gsd-color
+mauriay+   4889   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+mauriay+   4892   4598  0 Feb12 tty2     00:00:02 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+mauriay+   4893   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+mauriay+   4898   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+mauriay+   4899   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+mauriay+   4914      1  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-printer
+mauriay+   4943   4598  0 Feb12 tty2     00:00:05 nautilus-desktop
+mauriay+   4948   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-disk-utility/gsd-disk-utility-notify
+mauriay+   4953      1  0 Feb12 tty2     00:01:49 /usr/bin/vmtoolsd -n vmusr --blockFd 3
+mauriay+   4963   4696  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.7 /org/gtk/gvfs/exec_spaw/0
+mauriay+   4996   4566  0 Feb12 ?        00:00:00 /usr/lib/evolution/evolution-calendar-factory
+mauriay+   5005   4996  0 Feb12 ?        00:00:00 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx4996x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/4996/2
+mauriay+   5020   4566  0 Feb12 ?        00:00:00 /usr/lib/evolution/evolution-addressbook-factory
+mauriay+   5027   5020  0 Feb12 ?        00:00:00 /usr/lib/evolution/evolution-addressbook-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.AddressBookx5020x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/AddressBook/5020/2
+mauriay+   5043   4769  0 Feb12 tty2     00:00:07 /usr/lib/ibus/ibus-engine-simple
+mauriay+   5046   4566  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfsd-metadata
+mauriay+   5091   4598  0 Feb12 tty2     00:00:09 /usr/bin/gnome-software --gapplication-service
+mauriay+   5093   4598  0 Feb12 tty2     00:00:01 update-notifier
+mauriay+   5255   4598  0 Feb12 tty2     00:00:00 /usr/lib/deja-dup/deja-dup-monitor
+mauriay+   9115   4566  0 Feb12 ?        00:00:00 /usr/bin/zeitgeist-daemon
+mauriay+   9122   4566  0 Feb12 ?        00:00:00 /usr/lib/zeitgeist/zeitgeist/zeitgeist-fts
+mauriay+  19809   4696  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfsd-network --spawner :1.7 /org/gtk/gvfs/exec_spaw/3
+mauriay+  19884   4696  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfsd-dnssd --spawner :1.7 /org/gtk/gvfs/exec_spaw/7
+mauriay+  21370   4566  0 Feb12 ?        00:00:05 /usr/bin/nautilus --gapplication-service
+mauriay+  21502      1  0 Feb12 tty2     00:00:24 /usr/lib/firefox/firefox -new-window
+mauriay+  21543  21502  0 Feb12 tty2     00:00:02 /usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 1 -prefMapSize 179012 -parentBuildID 20190718161435 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 21502 true tab
+mauriay+  21588  21502  0 Feb12 tty2     00:00:06 /usr/lib/firefox/firefox -contentproc -childID 2 -isForBrowser -prefsLen 6608 -prefMapSize 179012 -parentBuildID 20190718161435 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 21502 true tab
+mauriay+  21638  21502  0 Feb12 tty2     00:00:00 /usr/lib/firefox/firefox -contentproc -childID 3 -isForBrowser -prefsLen 7394 -prefMapSize 179012 -parentBuildID 20190718161435 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 21502 true tab
+mauriay+  24052   4566  0 Feb12 ?        00:00:24 /opt/sublime_text/sublime_text --fwdargv0 /usr/bin/subl nombres.txt
+mauriay+  24065  24052  0 Feb12 ?        00:00:00 /opt/sublime_text/plugin_host 24052 --auto-shell-env
+mauriay+  24108   4566  0 Feb12 ?        00:00:09 /usr/lib/gnome-terminal/gnome-terminal-server
+mauriay+  24118  24108  0 Feb12 pts/0    00:00:00 bash
+mauriay+  26877  24118  0 04:32 pts/0    00:00:00 ps -fu mauriayllon
+
+2)
+Procesos de todos los usuarios con ps -ef
+
+UID         PID   PPID  C STIME TTY          TIME CMD
+root          1      0  0 Feb12 ?        00:00:08 /sbin/init auto noprompt
+root          2      0  0 Feb12 ?        00:00:00 [kthreadd]
+root          3      2  0 Feb12 ?        00:00:00 [rcu_gp]
+root          4      2  0 Feb12 ?        00:00:00 [rcu_par_gp]
+root          6      2  0 Feb12 ?        00:00:00 [kworker/0:0H-kb]
+root          8      2  0 Feb12 ?        00:00:00 [mm_percpu_wq]
+root          9      2  0 Feb12 ?        00:00:02 [ksoftirqd/0]
+root         10      2  0 Feb12 ?        00:00:07 [rcu_sched]
+root         11      2  0 Feb12 ?        00:00:00 [migration/0]
+root         12      2  0 Feb12 ?        00:00:00 [idle_inject/0]
+root         14      2  0 Feb12 ?        00:00:00 [cpuhp/0]
+root         15      2  0 Feb12 ?        00:00:00 [kdevtmpfs]
+root         16      2  0 Feb12 ?        00:00:00 [netns]
+root         17      2  0 Feb12 ?        00:00:00 [rcu_tasks_kthre]
+root         18      2  0 Feb12 ?        00:00:00 [kauditd]
+root         19      2  0 Feb12 ?        00:00:00 [khungtaskd]
+root         20      2  0 Feb12 ?        00:00:00 [oom_reaper]
+root         21      2  0 Feb12 ?        00:00:00 [writeback]
+root         22      2  0 Feb12 ?        00:00:01 [kcompactd0]
+root         23      2  0 Feb12 ?        00:00:00 [ksmd]
+root         24      2  0 Feb12 ?        00:00:00 [khugepaged]
+root         25      2  0 Feb12 ?        00:00:00 [crypto]
+root         26      2  0 Feb12 ?        00:00:00 [kintegrityd]
+root         27      2  0 Feb12 ?        00:00:00 [kblockd]
+root         28      2  0 Feb12 ?        00:00:00 [tpm_dev_wq]
+root         29      2  0 Feb12 ?        00:00:00 [ata_sff]
+root         30      2  0 Feb12 ?        00:00:00 [md]
+root         31      2  0 Feb12 ?        00:00:00 [edac-poller]
+root         32      2  0 Feb12 ?        00:00:00 [devfreq_wq]
+root         33      2  0 Feb12 ?        00:00:00 [watchdogd]
+root         37      2  0 Feb12 ?        00:00:04 [kswapd0]
+root         38      2  0 Feb12 ?        00:00:00 [kworker/u257:0-]
+root         39      2  0 Feb12 ?        00:00:00 [ecryptfs-kthrea]
+root        128      2  0 Feb12 ?        00:00:00 [kthrotld]
+root        129      2  0 Feb12 ?        00:00:00 [irq/24-pciehp]
+root        130      2  0 Feb12 ?        00:00:00 [irq/25-pciehp]
+root        131      2  0 Feb12 ?        00:00:00 [irq/26-pciehp]
+root        132      2  0 Feb12 ?        00:00:00 [irq/27-pciehp]
+root        133      2  0 Feb12 ?        00:00:00 [irq/28-pciehp]
+root        134      2  0 Feb12 ?        00:00:00 [irq/29-pciehp]
+root        135      2  0 Feb12 ?        00:00:00 [irq/30-pciehp]
+root        136      2  0 Feb12 ?        00:00:00 [irq/31-pciehp]
+root        137      2  0 Feb12 ?        00:00:00 [irq/32-pciehp]
+root        138      2  0 Feb12 ?        00:00:00 [irq/33-pciehp]
+root        139      2  0 Feb12 ?        00:00:00 [irq/34-pciehp]
+root        140      2  0 Feb12 ?        00:00:00 [irq/35-pciehp]
+root        141      2  0 Feb12 ?        00:00:00 [irq/36-pciehp]
+root        142      2  0 Feb12 ?        00:00:00 [irq/37-pciehp]
+root        143      2  0 Feb12 ?        00:00:00 [irq/38-pciehp]
+root        144      2  0 Feb12 ?        00:00:00 [irq/39-pciehp]
+root        145      2  0 Feb12 ?        00:00:00 [irq/40-pciehp]
+root        146      2  0 Feb12 ?        00:00:00 [irq/41-pciehp]
+root        147      2  0 Feb12 ?        00:00:00 [irq/42-pciehp]
+root        148      2  0 Feb12 ?        00:00:00 [irq/43-pciehp]
+root        149      2  0 Feb12 ?        00:00:00 [irq/44-pciehp]
+root        150      2  0 Feb12 ?        00:00:00 [irq/45-pciehp]
+root        151      2  0 Feb12 ?        00:00:00 [irq/46-pciehp]
+root        152      2  0 Feb12 ?        00:00:00 [irq/47-pciehp]
+root        153      2  0 Feb12 ?        00:00:00 [irq/48-pciehp]
+root        154      2  0 Feb12 ?        00:00:00 [irq/49-pciehp]
+root        155      2  0 Feb12 ?        00:00:00 [irq/50-pciehp]
+root        156      2  0 Feb12 ?        00:00:00 [irq/51-pciehp]
+root        157      2  0 Feb12 ?        00:00:00 [irq/52-pciehp]
+root        158      2  0 Feb12 ?        00:00:00 [irq/53-pciehp]
+root        159      2  0 Feb12 ?        00:00:00 [irq/54-pciehp]
+root        160      2  0 Feb12 ?        00:00:00 [irq/55-pciehp]
+root        161      2  0 Feb12 ?        00:00:00 [acpi_thermal_pm]
+root        162      2  0 Feb12 ?        00:00:00 [scsi_eh_0]
+root        163      2  0 Feb12 ?        00:00:00 [scsi_tmf_0]
+root        164      2  0 Feb12 ?        00:00:00 [scsi_eh_1]
+root        165      2  0 Feb12 ?        00:00:00 [scsi_tmf_1]
+root        168      2  0 Feb12 ?        00:00:00 [ipv6_addrconf]
+root        180      2  0 Feb12 ?        00:00:00 [kstrp]
+root        199      2  0 Feb12 ?        00:00:00 [charger_manager]
+root        255      2  0 Feb12 ?        00:00:00 [mpt_poll_0]
+root        256      2  0 Feb12 ?        00:00:00 [scsi_eh_2]
+root        257      2  0 Feb12 ?        00:00:00 [mpt/0]
+root        258      2  0 Feb12 ?        00:00:00 [scsi_tmf_2]
+root        259      2  0 Feb12 ?        00:00:00 [scsi_eh_3]
+root        260      2  0 Feb12 ?        00:00:00 [scsi_tmf_3]
+root        261      2  0 Feb12 ?        00:00:00 [scsi_eh_4]
+root        262      2  0 Feb12 ?        00:00:00 [scsi_tmf_4]
+root        263      2  0 Feb12 ?        00:00:00 [scsi_eh_5]
+root        264      2  0 Feb12 ?        00:00:00 [scsi_tmf_5]
+root        265      2  0 Feb12 ?        00:00:00 [scsi_eh_6]
+root        266      2  0 Feb12 ?        00:00:00 [scsi_tmf_6]
+root        267      2  0 Feb12 ?        00:00:00 [scsi_eh_7]
+root        268      2  0 Feb12 ?        00:00:00 [scsi_tmf_7]
+root        269      2  0 Feb12 ?        00:00:00 [scsi_eh_8]
+root        270      2  0 Feb12 ?        00:00:00 [scsi_tmf_8]
+root        271      2  0 Feb12 ?        00:00:00 [scsi_eh_9]
+root        272      2  0 Feb12 ?        00:00:00 [scsi_tmf_9]
+root        273      2  0 Feb12 ?        00:00:00 [scsi_eh_10]
+root        274      2  0 Feb12 ?        00:00:00 [scsi_tmf_10]
+root        275      2  0 Feb12 ?        00:00:00 [scsi_eh_11]
+root        276      2  0 Feb12 ?        00:00:00 [scsi_tmf_11]
+root        277      2  0 Feb12 ?        00:00:00 [scsi_eh_12]
+root        278      2  0 Feb12 ?        00:00:00 [scsi_tmf_12]
+root        279      2  0 Feb12 ?        00:00:00 [scsi_eh_13]
+root        280      2  0 Feb12 ?        00:00:00 [scsi_tmf_13]
+root        281      2  0 Feb12 ?        00:00:00 [scsi_eh_14]
+root        282      2  0 Feb12 ?        00:00:00 [scsi_tmf_14]
+root        283      2  0 Feb12 ?        00:00:00 [scsi_eh_15]
+root        284      2  0 Feb12 ?        00:00:00 [scsi_tmf_15]
+root        285      2  0 Feb12 ?        00:00:00 [scsi_eh_16]
+root        286      2  0 Feb12 ?        00:00:00 [scsi_tmf_16]
+root        287      2  0 Feb12 ?        00:00:00 [scsi_eh_17]
+root        288      2  0 Feb12 ?        00:00:00 [scsi_tmf_17]
+root        289      2  0 Feb12 ?        00:00:00 [scsi_eh_18]
+root        290      2  0 Feb12 ?        00:00:00 [scsi_tmf_18]
+root        291      2  0 Feb12 ?        00:00:00 [scsi_eh_19]
+root        292      2  0 Feb12 ?        00:00:00 [scsi_tmf_19]
+root        293      2  0 Feb12 ?        00:00:00 [scsi_eh_20]
+root        294      2  0 Feb12 ?        00:00:00 [scsi_tmf_20]
+root        295      2  0 Feb12 ?        00:00:00 [scsi_eh_21]
+root        296      2  0 Feb12 ?        00:00:00 [scsi_tmf_21]
+root        297      2  0 Feb12 ?        00:00:00 [scsi_eh_22]
+root        298      2  0 Feb12 ?        00:00:00 [scsi_tmf_22]
+root        299      2  0 Feb12 ?        00:00:00 [scsi_eh_23]
+root        300      2  0 Feb12 ?        00:00:00 [scsi_tmf_23]
+root        301      2  0 Feb12 ?        00:00:00 [scsi_eh_24]
+root        302      2  0 Feb12 ?        00:00:00 [scsi_tmf_24]
+root        303      2  0 Feb12 ?        00:00:00 [scsi_eh_25]
+root        304      2  0 Feb12 ?        00:00:00 [scsi_tmf_25]
+root        305      2  0 Feb12 ?        00:00:00 [scsi_eh_26]
+root        306      2  0 Feb12 ?        00:00:00 [scsi_tmf_26]
+root        307      2  0 Feb12 ?        00:00:00 [scsi_eh_27]
+root        308      2  0 Feb12 ?        00:00:00 [scsi_tmf_27]
+root        309      2  0 Feb12 ?        00:00:00 [scsi_eh_28]
+root        310      2  0 Feb12 ?        00:00:00 [scsi_tmf_28]
+root        311      2  0 Feb12 ?        00:00:00 [scsi_eh_29]
+root        312      2  0 Feb12 ?        00:00:00 [scsi_tmf_29]
+root        313      2  0 Feb12 ?        00:00:00 [scsi_eh_30]
+root        314      2  0 Feb12 ?        00:00:00 [scsi_tmf_30]
+root        315      2  0 Feb12 ?        00:00:00 [scsi_eh_31]
+root        316      2  0 Feb12 ?        00:00:00 [scsi_tmf_31]
+root        331      2  0 Feb12 ?        00:00:00 [scsi_eh_32]
+root        336      2  0 Feb12 ?        00:00:00 [scsi_tmf_32]
+root        347      2  0 Feb12 ?        00:00:12 [kworker/0:1H-kb]
+root        372      2  0 Feb12 ?        00:00:04 [jbd2/sda1-8]
+root        373      2  0 Feb12 ?        00:00:00 [ext4-rsv-conver]
+root        414      1  0 Feb12 ?        00:00:03 /lib/systemd/systemd-journald
+root        424      1  0 Feb12 ?        00:00:00 /lib/systemd/systemd-udevd
+systemd+    516      1  0 Feb12 ?        00:00:03 /lib/systemd/systemd-resolved
+systemd+    518      1  0 Feb12 ?        00:00:00 /lib/systemd/systemd-timesyncd
+syslog      541      1  0 Feb12 ?        00:00:00 /usr/sbin/rsyslogd -n
+root        544      1  0 Feb12 ?        00:00:00 /lib/systemd/systemd-logind
+root        548      1  0 Feb12 ?        00:00:00 /usr/sbin/cron -f
+root        552      1  0 Feb12 ?        00:00:01 /usr/sbin/acpid
+root        553      1  0 Feb12 ?        00:00:01 /usr/lib/accountsservice/accounts-daemon
+avahi       563      1  0 Feb12 ?        00:00:03 avahi-daemon: running [ubuntu.local]
+avahi       568    563  0 Feb12 ?        00:00:00 avahi-daemon: chroot helper
+root        572      1  0 Feb12 ?        00:00:00 /usr/lib/udisks2/udisksd
+root        575      1  0 Feb12 ?        00:00:00 /usr/sbin/ModemManager --filter-policy=strict
+message+    592      1  0 Feb12 ?        00:00:04 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root        616      1  0 Feb12 ?        00:00:07 /usr/sbin/NetworkManager --no-daemon
+root        617      1  0 Feb12 ?        00:00:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root        618      1  0 Feb12 ?        00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root        635      1  0 Feb12 ?        00:00:00 /usr/lib/policykit-1/polkitd --no-debug
+root        668      1  0 Feb12 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root        719      2  0 Feb12 ?        00:00:00 [kworker/u257:1-]
+root        722      2  0 Feb12 ?        00:00:10 [irq/16-vmwgfx]
+root        724      2  0 Feb12 ?        00:00:00 [ttm_swap]
+whoopsie    812      1  0 Feb12 ?        00:00:00 /usr/bin/whoopsie -f
+kernoops    815      1  0 Feb12 ?        00:00:01 /usr/sbin/kerneloops --test
+kernoops    820      1  0 Feb12 ?        00:00:01 /usr/sbin/kerneloops
+root        911      1  0 Feb12 ?        00:00:00 /usr/lib/bluetooth/bluetoothd
+root       1274      1  0 Feb12 ?        00:00:11 /usr/lib/packagekit/packagekitd
+root       1726      1  0 Feb12 ?        00:01:53 /usr/bin/vmtoolsd
+root       1838      1  0 Feb12 ?        00:00:00 /usr/bin/VGAuthService
+root       3331      2  0 Feb12 ?        00:00:00 [loop1]
+root       3334      1  0 Feb12 ?        00:00:00 vmware-vmblock-fuse /run/vmblock-fuse -o rw,subtype=vmware-vmblock,default_permissions,allow_other,dev,suid
+root       3444      2  0 Feb12 ?        00:00:00 [loop2]
+root       3467      1  0 Feb12 ?        00:00:00 /usr/sbin/gdm3
+root       3471   3467  0 Feb12 ?        00:00:00 gdm-session-worker [pam/gdm-launch-environment]
+gdm        3480      1  0 Feb12 ?        00:00:00 /lib/systemd/systemd --user
+gdm        3481   3480  0 Feb12 ?        00:00:00 (sd-pam)
+gdm        3492   3471  0 Feb12 tty1     00:00:00 /usr/lib/gdm3/gdm-wayland-session gnome-session --autostart /usr/share/gdm/greeter/autostart
+gdm        3494   3480  0 Feb12 ?        00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+gdm        3496   3492  0 Feb12 tty1     00:00:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/gdm/greeter/autostart
+gdm        3525   3480  0 Feb12 ?        00:00:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+gdm        3530   3496  0 Feb12 tty1     00:00:24 /usr/bin/gnome-shell
+root       3537      1  0 Feb12 ?        00:00:00 /usr/lib/upower/upowerd
+gdm        3556   3530  0 Feb12 tty1     00:06:41 /usr/bin/Xwayland :1024 -rootless -terminate -accessx -core -listen 4 -listen 5 -displayfd 6
+gdm        3588   3480  0 Feb12 ?        00:00:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+gdm        3593   3588  0 Feb12 ?        00:00:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+gdm        3595   3480  0 Feb12 ?        00:00:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+gdm        3601   3480  0 Feb12 ?        00:00:00 /usr/bin/pulseaudio --daemonize=no
+rtkit      3605      1  0 Feb12 ?        00:00:01 /usr/lib/rtkit/rtkit-daemon
+root       3608      2  0 Feb12 ?        00:00:00 [loop3]
+root       3672      2  0 Feb12 ?        00:00:00 [loop4]
+gdm        3680   3530  0 Feb12 tty1     00:00:00 ibus-daemon --xim --panel disable
+gdm        3685   3480  0 Feb12 ?        00:00:00 /usr/libexec/xdg-permission-store
+gdm        3697   3680  0 Feb12 tty1     00:00:00 /usr/lib/ibus/ibus-dconf
+gdm        3700      1  0 Feb12 tty1     00:00:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm        3702   3480  0 Feb12 ?        00:00:00 /usr/lib/ibus/ibus-portal
+root       3714      1  0 Feb12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/boltd
+gdm        3718   3496  0 Feb12 tty1     00:00:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm        3721   3496  0 Feb12 tty1     00:00:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm        3722   3496  0 Feb12 tty1     00:00:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gdm        3725   3496  0 Feb12 tty1     00:00:13 /usr/lib/gnome-settings-daemon/gsd-color
+gdm        3726   3496  0 Feb12 tty1     00:00:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+gdm        3727   3496  0 Feb12 tty1     00:00:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gdm        3728   3496  0 Feb12 tty1     00:00:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm        3731   3496  0 Feb12 tty1     00:00:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm        3733   3496  0 Feb12 tty1     00:00:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+gdm        3734   3496  0 Feb12 tty1     00:00:00 /usr/lib/gnome-settings-daemon/gsd-power
+gdm        3736   3496  0 Feb12 tty1     00:00:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm        3737   3496  0 Feb12 tty1     00:00:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm        3739   3496  0 Feb12 tty1     00:00:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gdm        3741   3496  0 Feb12 tty1     00:00:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+gdm        3746   3496  0 Feb12 tty1     00:00:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm        3748   3496  0 Feb12 tty1     00:00:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm        3751   3496  0 Feb12 tty1     00:00:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm        3774   3680  0 Feb12 tty1     00:00:00 /usr/lib/ibus/ibus-engine-simple
+gdm        3807   3480  0 Feb12 ?        00:00:00 /usr/lib/dconf/dconf-service
+colord     3826      1  0 Feb12 ?        00:00:00 /usr/lib/colord/colord
+root       3942      2  0 Feb12 ?        00:00:00 [loop5]
+root       4090      2  0 Feb12 ?        00:00:00 [loop6]
+root       4247      2  0 Feb12 ?        00:00:00 [loop7]
+root       4562   3467  0 Feb12 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+mauriay+   4566      1  0 Feb12 ?        00:00:00 /lib/systemd/systemd --user
+mauriay+   4567   4566  0 Feb12 ?        00:00:00 (sd-pam)
+mauriay+   4580      1  0 Feb12 ?        00:00:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+mauriay+   4584   4562  0 Feb12 tty2     00:00:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
+mauriay+   4587   4584  0 Feb12 tty2     00:02:16 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+mauriay+   4594   4566  0 Feb12 ?        00:00:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+mauriay+   4598   4584  0 Feb12 tty2     00:00:00 /usr/lib/gnome-session/gnome-session-binary --session=ubuntu
+mauriay+   4693   4598  0 Feb12 ?        00:00:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
+mauriay+   4696   4566  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfsd
+mauriay+   4701   4566  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+mauriay+   4710   4566  0 Feb12 ?        00:00:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+mauriay+   4715   4710  0 Feb12 ?        00:00:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+mauriay+   4718   4566  0 Feb12 ?        00:00:01 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+mauriay+   4731   4566  0 Feb12 ?        00:00:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+mauriay+   4746   4598  0 Feb12 tty2     00:04:59 /usr/bin/gnome-shell
+mauriay+   4757      1  0 Feb12 ?        00:00:15 /usr/bin/pulseaudio --start --log-target=syslog
+root       4768      2  0 Feb12 ?        00:00:00 [krfcommd]
+mauriay+   4769   4746  0 Feb12 tty2     00:00:21 ibus-daemon --xim --panel disable
+mauriay+   4771   4566  0 Feb12 ?        00:00:00 /usr/libexec/xdg-permission-store
+mauriay+   4779   4769  0 Feb12 tty2     00:00:00 /usr/lib/ibus/ibus-dconf
+mauriay+   4782      1  0 Feb12 tty2     00:00:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+mauriay+   4784   4566  0 Feb12 ?        00:00:00 /usr/lib/ibus/ibus-portal
+mauriay+   4794   4566  0 Feb12 ?        00:00:00 /usr/lib/gnome-shell/gnome-shell-calendar-server
+mauriay+   4800   4566  0 Feb12 ?        00:00:00 /usr/lib/evolution/evolution-source-registry
+mauriay+   4805   4566  0 Feb12 ?        00:00:00 /usr/lib/dconf/dconf-service
+mauriay+   4811   4566  0 Feb12 ?        00:00:00 /usr/lib/gnome-online-accounts/goa-daemon
+mauriay+   4817   4566  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+mauriay+   4821   4566  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+mauriay+   4826   4566  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+mauriay+   4835   4566  0 Feb12 ?        00:00:00 /usr/lib/gnome-online-accounts/goa-identity-service
+mauriay+   4837   4566  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+mauriay+   4843   4566  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+mauriay+   4850   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-power
+mauriay+   4852   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+mauriay+   4853   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+mauriay+   4854   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+mauriay+   4857   4598  0 Feb12 tty2     00:00:01 /usr/lib/gnome-settings-daemon/gsd-sharing
+mauriay+   4860   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+mauriay+   4867   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+mauriay+   4869   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-sound
+mauriay+   4879   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+mauriay+   4881   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+mauriay+   4885   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+mauriay+   4887   4598  0 Feb12 tty2     00:00:12 /usr/lib/gnome-settings-daemon/gsd-color
+mauriay+   4889   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+mauriay+   4892   4598  0 Feb12 tty2     00:00:02 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+mauriay+   4893   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+mauriay+   4898   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+mauriay+   4899   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+mauriay+   4914      1  0 Feb12 tty2     00:00:00 /usr/lib/gnome-settings-daemon/gsd-printer
+mauriay+   4943   4598  0 Feb12 tty2     00:00:05 nautilus-desktop
+mauriay+   4948   4598  0 Feb12 tty2     00:00:00 /usr/lib/gnome-disk-utility/gsd-disk-utility-notify
+mauriay+   4953      1  0 Feb12 tty2     00:01:49 /usr/bin/vmtoolsd -n vmusr --blockFd 3
+mauriay+   4963   4696  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.7 /org/gtk/gvfs/exec_spaw/0
+mauriay+   4996   4566  0 Feb12 ?        00:00:00 /usr/lib/evolution/evolution-calendar-factory
+mauriay+   5005   4996  0 Feb12 ?        00:00:00 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Bac
+mauriay+   5020   4566  0 Feb12 ?        00:00:00 /usr/lib/evolution/evolution-addressbook-factory
+mauriay+   5027   5020  0 Feb12 ?        00:00:00 /usr/lib/evolution/evolution-addressbook-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.
+mauriay+   5043   4769  0 Feb12 tty2     00:00:07 /usr/lib/ibus/ibus-engine-simple
+mauriay+   5046   4566  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfsd-metadata
+mauriay+   5091   4598  0 Feb12 tty2     00:00:09 /usr/bin/gnome-software --gapplication-service
+mauriay+   5093   4598  0 Feb12 tty2     00:00:01 update-notifier
+root       5126      1  0 Feb12 ?        00:00:03 /usr/lib/fwupd/fwupd
+root       5181      1  0 Feb12 ?        00:00:00 gpg-agent --homedir /var/lib/fwupd/gnupg --use-standard-socket --daemon
+mauriay+   5255   4598  0 Feb12 tty2     00:00:00 /usr/lib/deja-dup/deja-dup-monitor
+root       6060      2  0 Feb12 ?        00:00:00 [loop8]
+root       6123      2  0 Feb12 ?        00:00:00 [loop9]
+root       6344      2  0 Feb12 ?        00:00:00 [loop10]
+root       6369      2  0 Feb12 ?        00:00:00 [loop11]
+root       6399      2  0 Feb12 ?        00:00:00 [loop12]
+root       6495      2  0 Feb12 ?        00:00:00 [loop13]
+root       6570      2  0 Feb12 ?        00:00:00 [loop14]
+root       6646      2  0 Feb12 ?        00:00:00 [loop15]
+mauriay+   9115   4566  0 Feb12 ?        00:00:00 /usr/bin/zeitgeist-daemon
+mauriay+   9122   4566  0 Feb12 ?        00:00:00 /usr/lib/zeitgeist/zeitgeist/zeitgeist-fts
+root      14567      2  0 Feb12 ?        00:00:00 [kworker/0:0-eve]
+root      18309      2  0 Feb12 ?        00:00:00 [loop16]
+root      18339      1  0 Feb12 ?        00:00:03 /usr/lib/snapd/snapd
+mauriay+  19809   4696  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfsd-network --spawner :1.7 /org/gtk/gvfs/exec_spaw/3
+mauriay+  19884   4696  0 Feb12 ?        00:00:00 /usr/lib/gvfs/gvfsd-dnssd --spawner :1.7 /org/gtk/gvfs/exec_spaw/7
+mauriay+  21370   4566  0 Feb12 ?        00:00:05 /usr/bin/nautilus --gapplication-service
+mauriay+  21502      1  0 Feb12 tty2     00:00:24 /usr/lib/firefox/firefox -new-window
+mauriay+  21543  21502  0 Feb12 tty2     00:00:02 /usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 1 -prefMapSize 179012 -parentBuildID 20190718161435 -g
+mauriay+  21588  21502  0 Feb12 tty2     00:00:06 /usr/lib/firefox/firefox -contentproc -childID 2 -isForBrowser -prefsLen 6608 -prefMapSize 179012 -parentBuildID 20190718161435
+mauriay+  21638  21502  0 Feb12 tty2     00:00:00 /usr/lib/firefox/firefox -contentproc -childID 3 -isForBrowser -prefsLen 7394 -prefMapSize 179012 -parentBuildID 20190718161435
+mauriay+  24052   4566  0 Feb12 ?        00:00:26 /opt/sublime_text/sublime_text --fwdargv0 /usr/bin/subl nombres.txt
+mauriay+  24065  24052  0 Feb12 ?        00:00:00 /opt/sublime_text/plugin_host 24052 --auto-shell-env
+mauriay+  24108   4566  0 Feb12 ?        00:00:10 /usr/lib/gnome-terminal/gnome-terminal-server
+mauriay+  24118  24108  0 Feb12 pts/0    00:00:00 bash
+root      26293    616  0 03:28 ?        00:00:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /run/dhclient-ens33.pid -lf /var/lib/NetworkManager/dhclien
+root      26423      1  0 03:29 ?        00:00:00 /usr/sbin/cupsd -l
+root      26425      1  0 03:29 ?        00:00:00 /usr/sbin/cups-browsed
+root      26726      2  0 04:03 ?        00:00:00 [kworker/u256:0-]
+root      26858      2  0 04:27 ?        00:00:00 [kworker/u256:1-]
+root      26860      2  0 04:27 ?        00:00:00 [kworker/0:2-eve]
+root      26879      2  0 04:33 ?        00:00:00 [kworker/0:1-eve]
+mauriay+  26882  24118  0 04:34 pts/0    00:00:00 ps -ef
+
