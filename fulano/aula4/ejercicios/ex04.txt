@@ -1,0 +1,189 @@
+
+1) Cuantas lineas, palabras y caracteres tiene el archivo nombres?
+wc nombres.txt 
+ 142  284 2172 nombres.txt
+
+2) Nombres que empiecen con A
+grep -c "A" nombres.txt 
+grep  "A" nombres.txt 
+Awilda Lazaro
+Awilda Lazaro
+Awilda Lazaro
+Awilda Lazaro
+Awilda Lazaro
+Awilda Lazaro
+Awilda Lazaro
+Awilda Lazaro
+Awilda Lazaro
+Awilda Lazaro
+Awilda Lazaro
+Awilda Lazaro
+
+
+Nombres que no empiezan con A:
+grep -v "A" nombres.txt 
+Jolene Graydon
+Sherrie Melrose
+Gavin Kelleher
+Shalonda Blakey
+Leonel Zambrano
+Homer Whatley
+Bennett Lanza
+Johna Stoddart
+Lucie Delaughter
+Jolene Graydon
+Sherrie Melrose
+Gavin Kelleher
+Shalonda Blakey
+Leonel Zambrano
+Homer Whatley
+Bennett Lanza
+Johna Stoddart
+Lucie Delaughter
+Homer Whatley
+Bennett Lanza
+Johna Stoddart
+Lucie Delaughter
+Homer Whatley
+Bennett Lanza
+Johna Stoddart
+Lucie Delaughter
+Bennett Lanza
+Johna Stoddart
+Lucie Delaughter
+Homer Whatley
+Bennett Lanza
+Lucie Delaughter
+Jolene Graydon
+Sherrie Melrose
+Gavin Kelleher
+Shalonda Blakey
+Lucie Delaughter
+Jolene Graydon
+Sherrie Melrose
+Gavin Kelleher
+Shalonda Blakey
+Lucie Delaughter
+Jolene Graydon
+Sherrie Melrose
+Gavin Kelleher
+Shalonda Blakey
+Bennett Lanza
+Johna Stoddart
+Lucie Delaughter
+Bennett Lanza
+Johna Stoddart
+Lucie Delaughter
+Homer Whatley
+Bennett Lanza
+Lucie Delaughter
+Jolene Graydon
+Sherrie Melrose
+Gavin Kelleher
+Shalonda Blakey
+Lucie Delaughter
+Jolene Graydon
+Sherrie Melrose
+Gavin Kelleher
+Shalonda Blakey
+Lucie Delaughter
+Jolene Graydon
+Sherrie Melrose
+Gavin Kelleher
+Shalonda Blakey
+Leonel Zambrano
+Homer Whatley
+Bennett Lanza
+Johna Stoddart
+Lucie Delaughter
+Jolene Graydon
+Sherrie Melrose
+Gavin Kelleher
+Shalonda Blakey
+Leonel Zambrano
+Homer Whatley
+Bennett Lanza
+Johna Stoddart
+Lucie Delaughter
+Homer Whatley
+Bennett Lanza
+Johna Stoddart
+Lucie Delaughter
+Homer Whatley
+Bennett Lanza
+Johna Stoddart
+Lucie Delaughter
+Bennett Lanza
+Johna Stoddart
+Lucie Delaughter
+Homer Whatley
+Bennett Lanza
+Lucie Delaughter
+Jolene Graydon
+Sherrie Melrose
+Gavin Kelleher
+Shalonda Blakey
+Lucie Delaughter
+Jolene Graydon
+Sherrie Melrose
+Gavin Kelleher
+Shalonda Blakey
+Lucie Delaughter
+Jolene Graydon
+Sherrie Melrose
+Gavin Kelleher
+Shalonda Blakey
+Bennett Lanza
+Johna Stoddart
+Lucie Delaughter
+Bennett Lanza
+Johna Stoddart
+Lucie Delaughter
+Homer Whatley
+Bennett Lanza
+Lucie Delaughter
+Jolene Graydon
+Sherrie Melrose
+Gavin Kelleher
+Shalonda Blakey
+Lucie Delaughter
+Jolene Graydon
+Sherrie Melrose
+Gavin Kelleher
+Shalonda Blakey
+Lucie Delaughter
+
+3)
+grep -v "A" nombres.txt > nombre_no_a.txt
+
+4) Diferencias entre los dos documentos:
+diff -- nombres.txt nombre_no_a.txt 
+7d6
+< Awilda Lazaro
+17d15
+< Awilda Lazaro
+22d19
+< Awilda Lazaro
+27d23
+< Awilda Lazaro
+35d30
+< Awilda Lazaro
+59d53
+< Awilda Lazaro
+78d71
+< Awilda Lazaro
+88d80
+< Awilda Lazaro
+93d84
+< Awilda Lazaro
+98d88
+< Awilda Lazaro
+106d95
+< Awilda Lazaro
+130d118
+< Awilda Lazaro
+
+Preguntas de la 5 a la 7 en el arhvivo investigacion.txt
+
+
+

@@ -1,0 +1,40 @@
+1)
+Numero total de candidatos:
+
+sort -c nombres.txt | uniq | wc -l
+10
+
+Jolene Graydon
+Sherrie Melrose
+Gavin Kelleher
+Shalonda Blakey
+Leonel Zambrano
+Homer Whatley
+Awilda Lazaro
+Bennett Lanza
+Johna Stoddart
+Lucie Delaughter
+
+2)
+El candidato mas botado es Lucis Delaughter con 26 votos.
+cat nombres.txt | sort | uniq -c
+     12 Awilda Lazaro
+     18 Bennett Lanza
+     14 Gavin Kelleher
+     12 Homer Whatley
+     14 Johna Stoddart
+     14 Jolene Graydon
+      4 Leonel Zambrano
+     26 Lucie Delaughter
+     14 Shalonda Blakey
+     14 Sherrie Melrose
+
+
+
+
+
+
+
+
+
+
